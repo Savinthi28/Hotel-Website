@@ -50,6 +50,37 @@
       .text > h2 {
         font-size: 1.5rem;
       }
+      .icon-img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+        mix-blend-mode: multiply;
+      }
+      .fs-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .imge {
+        width: 600px;
+        height: 400px;
+      }
+      .out {
+        color: #ffffff;
+      }
+      .logo {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        object-fit: cover;
+      }
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
     </style>
   </head>
   <body>
@@ -215,12 +246,84 @@
       </p>
     </div>
 
+    <div
+      class="container-fluid text-center position-relative overflow-hidden p-0"
+    >
+      <img
+        src="/assets//images/blur.jpg"
+        alt="sky"
+        class="img-fluid w-100 min-vh-50"
+        style="filter: blur(5px)"
+      />
+      <div
+        class="row position-absolute top-0 start-0 w-100 h-100 justify-content-center align-items-center"
+      >
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+          <h2 style="color: black">Join Queens Hotel Circle today</h2>
+          <p style="color: black">
+            Whether you’re here for a bite or a string of nights, join as a
+            member to enjoy exclusive benefits and a seamless digital
+            experience.
+          </p>
+          <button
+            class="btn"
+            style="
+              background-color: rgb(71, 165, 233);
+              color: black;
+              border: none;
+            "
+          >
+            Join Now
+          </button>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+          <div class="container text-center">
+            <div class="row row-cols-2 g-4">
+              <div class="col">
+                <img
+                  src="/assets/images/king image.png"
+                  alt="king"
+                  class="icon-img"
+                />
+                <p style="color: black">Member Exclusive Offers</p>
+              </div>
+              <div class="col">
+                <img
+                  src="/assets/images/baby image.webp"
+                  alt="baby"
+                  class="icon-img"
+                />
+                <p style="color: black">Children Eat Free</p>
+              </div>
+              <div class="col">
+                <img
+                  src="/assets/images/phone image.jpeg"
+                  alt="phone"
+                  class="icon-img"
+                />
+                <p style="color: black">Mobile Check-In & Out</p>
+              </div>
+              <div class="col">
+                <img
+                  src="/assets/images/moon image.webp"
+                  alt="moon"
+                  class="icon-img"
+                />
+                <p style="color: black">Earn Free Nights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fs-3">Rooms Booking</p>
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card">
             <img
-              src="/assets/images/hotel room 1.jpg"
+              src="/assets/images/room-1.webp"
               class="card-img-top"
               alt="Hotel room 1"
             />
@@ -234,10 +337,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card">
             <img
-              src="/assets/images/room-1.webp"
+              src="/assets/images/hotel room 1.jpg"
               class="card-img-top"
               alt="Hotel room 2"
             />
@@ -251,7 +354,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card">
             <img
               src="/assets/images/room-2.webp"
@@ -268,6 +371,109 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img
+              src="/assets/images/room-3.jpg"
+              class="card-img-top"
+              alt="Hotel room 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Room</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img
+              src="/assets/images/room-5.webp"
+              class="card-img-top"
+              alt="Hotel room 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Room</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img
+              src="/assets/images/room-6.webp"
+              class="card-img-top"
+              alt="Hotel room 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Room</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fs-3">Business Travel</p>
+
+    <div class="container text-center">
+      <div class="row align-items-center justify-content-center g-4">
+        <div class="col-md-6">
+          <div class="info-container">
+            <p class="fs-5 fw-bold">Shangri-La Business Travel Programme</p>
+            <p class="fs-6 text-muted">
+              At Shangri-La, as we understand how important connectivity,
+              efficiency and comfort are to our business travellers, we have
+              designed a set of benefits to help your company’s associates
+              achieve their business goals wherever travel may take them.
+            </p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="img-fluid rounded"
+            src="/assets/images/people-modern-waiting-room-office-full-length-side-view-four-business-sitting-33840436.webp"
+            alt="office"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5">
+      <div
+        class="row align-items-center justify-content-center g-4 flex-md-row-reverse"
+      >
+        <div class="col-md-6">
+          <img
+            class="img-fluid rounded"
+            src="/assets/images/meeting.avif"
+            alt="office"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="info-container">
+            <p class="fs-5 fw-bold">Shangri-La Business Travel Programme</p>
+            <p class="fs-6 text-muted">
+              At Shangri-La, as we understand how important connectivity,
+              efficiency and comfort are to our business travellers, we have
+              designed a set of benefits to help your company’s associates
+              achieve their business goals wherever travel may take them.
+            </p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -276,7 +482,7 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
           <div class="text">
             <p class="text-uppercase text-primary fw-bold mb-2">MENU</p>
-            <h2>Our Food Menu</h2>
+            <h2>Food Menu</h2>
           </div>
           <div>
             <i class="bi bi-arrow-left-short fs-2 me-2"></i>
@@ -400,6 +606,205 @@
         </div>
       </div>
     </section>
+
+    <div class="container-fluid bg-black text-white p-0">
+      <div class="text-center py-4">
+        <p class="h4 mt-2 mb-0">The Queens Hotel</p>
+        <p class="fs-6" style="color: #ffffff">COLOMBO - SRI LANKA</p>
+
+        <hr class="border-secondary mx-auto mt-4" style="max-width: 80%" />
+      </div>
+
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-start mb-4">
+            <p class="text-uppercase fw-bold mb-2">The Queens Hotel</p>
+            <p class="text-secondary mb-1">48, Janadhipathi Mawatha,</p>
+            <p class="text-secondary mb-1">Colombo 01, Sri Lanka.</p>
+            <p class="text-secondary mt-3 mb-1">+98743654345246</p>
+            <p class="text-uppercase fw-bold mt-4 mb-2">Inquiries:</p>
+            <p class="text-secondary mb-1">info@thekingsburyhotel.com</p>
+            <p class="text-uppercase fw-bold mt-4 mb-2">Reservations:</p>
+            <p class="text-secondary mb-1">
+              reservations@thekingsburyhotel.com
+            </p>
+
+            <div class="mt-4">
+              <button
+                class="btn btn-outline-light text-uppercase w-100 py-2"
+                style="border-radius: 0"
+              >
+                Newsletter Subscription
+              </button>
+            </div>
+
+            <div class="d-flex justify-content-start mt-4">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 text-start mb-4">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Indulgence</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Dining</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Senses Spa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >News/Media</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 text-start mb-4">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold"
+                  >Accommodation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Weddings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Experiences</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Location</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Investor Relations</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 text-start mb-4">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold"
+                  >Promotions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Meetings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Facilities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none text-uppercase fw-bold mt-3 d-block"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-outline-info text-uppercase mt-3 d-inline-block px-4 py-2"
+                  style="
+                    border-color: #47a5e9;
+                    color: #47a5e9;
+                    border-radius: 0;
+                  "
+                >
+                  Outdoor Catering
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mx-auto mt-4" />
+      </div>
+
+      <div
+        class="container py-3 text-secondary d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="text-start order-2 order-md-1">
+          <small>Terms & Conditions | Privacy Policy | Sitemap</small> <br />
+          <small>All Copyrights Reserved by The Kingsbury Hotel - © 2025</small>
+        </div>
+        <div class="text-end order-1 order-md-2 mb-2 mb-md-0">
+          <small>Website designed and developed by eMarketingEye</small>
+        </div>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <br />
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
