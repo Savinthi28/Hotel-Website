@@ -7,9 +7,10 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       .navbar-brand {
         font-weight: 900;
@@ -230,7 +231,8 @@
       </button>
     </div>
 
-    <div class="paragragh-container text-center">
+    <!-- 1 -->
+    <div class="paragragh-container text-center" data-aos="fade-up">
       <h2>An Enriching Coastal Retreat – Le Grand Matara</h2>
       <p>
         Ahu Bay is a tranquil beach house tailored for free-spirited souls. The
@@ -246,6 +248,7 @@
       </p>
     </div>
 
+    <!-- 2 -->
     <div
       class="container-fluid text-center position-relative overflow-hidden p-0"
     >
@@ -258,7 +261,7 @@
       <div
         class="row position-absolute top-0 start-0 w-100 h-100 justify-content-center align-items-center"
       >
-        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4" data-aos="fade-right">
           <h2 style="color: black">Join Queens Hotel Circle today</h2>
           <p style="color: black">
             Whether you’re here for a bite or a string of nights, join as a
@@ -277,7 +280,7 @@
           </button>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 p-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 p-4" data-aos="fade-left">
           <div class="container text-center">
             <div class="row row-cols-2 g-4">
               <div class="col">
@@ -317,10 +320,16 @@
         </div>
       </div>
     </div>
+
+    <!-- 3 -->
     <p class="fs-3">Rooms Booking</p>
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div class="card">
             <img
               src="/assets/images/room-1.webp"
@@ -337,7 +346,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="card">
             <img
               src="/assets/images/hotel room 1.jpg"
@@ -354,7 +367,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <div class="card">
             <img
               src="/assets/images/room-2.webp"
@@ -371,7 +388,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div class="card">
             <img
               src="/assets/images/room-3.jpg"
@@ -388,7 +409,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <div class="card">
             <img
               src="/assets/images/room-5.webp"
@@ -405,7 +430,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <div class="card">
             <img
               src="/assets/images/room-6.webp"
@@ -425,11 +454,14 @@
       </div>
     </div>
 
+    <!-- 4 -->
     <p class="fs-3">Business Travel</p>
-
     <div class="container text-center">
-      <div class="row align-items-center justify-content-center g-4">
-        <div class="col-md-6">
+      <div
+        class="row align-items-center justify-content-center g-4"
+        data-aos="fade-up"
+      >
+        <div class="col-md-6" data-aos="fade-right">
           <div class="info-container">
             <p class="fs-5 fw-bold">Shangri-La Business Travel Programme</p>
             <p class="fs-6 text-muted">
@@ -441,7 +473,7 @@
             <button class="btn btn-primary">Learn More</button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
           <img
             class="img-fluid rounded"
             src="/assets/images/people-modern-waiting-room-office-full-length-side-view-four-business-sitting-33840436.webp"
@@ -450,19 +482,20 @@
         </div>
       </div>
     </div>
-
     <div class="container text-center mt-5">
       <div
         class="row align-items-center justify-content-center g-4 flex-md-row-reverse"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <img
             class="img-fluid rounded"
             src="/assets/images/meeting.avif"
             alt="office"
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
           <div class="info-container">
             <p class="fs-5 fw-bold">Shangri-La Business Travel Programme</p>
             <p class="fs-6 text-muted">
@@ -477,9 +510,14 @@
       </div>
     </div>
 
+    <!-- 5 -->
     <section class="food-menu-section py-5">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-5">
+        <div
+          class="d-flex justify-content-between align-items-center mb-5"
+          data-aos="fade-up"
+          data-aos-duration="5000"
+        >
           <div class="text">
             <p class="text-uppercase text-primary fw-bold mb-2">MENU</p>
             <h2>Food Menu</h2>
@@ -490,10 +528,10 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex align-items-center mb-4">
               <img
-                src="/assets/images/food-1.jpg"
+                src="/assets//images/food-1.jpg"
                 class="food-item-img me-4"
                 alt="Chicken Rice"
               />
@@ -509,10 +547,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="d-flex align-items-center mb-4">
               <img
-                src="/assets/images/food-2.webp"
+                src="/assets//images/food-2.webp"
                 class="food-item-img me-4"
                 alt="Nasiguran"
               />
@@ -527,7 +565,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="d-flex align-items-center mb-4">
               <img
                 src="/assets/images/food-3.webp"
@@ -546,10 +584,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="d-flex align-items-center mb-4">
               <img
-                src="/assets/images/food-4.jpg"
+                src="/assets//images/food-4.jpg"
                 class="food-item-img me-4"
                 alt="Noodlse"
               />
@@ -565,10 +603,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <div class="d-flex align-items-center mb-4">
               <img
-                src="/assets/images/food-5.png"
+                src="/assets//images/food-5.png"
                 class="food-item-img me-4"
                 alt="Pasta"
               />
@@ -584,10 +622,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
             <div class="d-flex align-items-center mb-4">
               <img
-                src="/assets/images/food-6.avif"
+                src="/assets//images/food-6.avif"
                 class="food-item-img me-4"
                 alt="Biriyani"
               />
@@ -607,6 +645,7 @@
       </div>
     </section>
 
+    <!-- 6 -->
     <div class="container-fluid bg-black text-white p-0">
       <div class="text-center py-4">
         <p class="h4 mt-2 mb-0">The Queens Hotel</p>
@@ -825,8 +864,13 @@
     </nav>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
