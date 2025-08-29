@@ -115,6 +115,12 @@
         border-color: black;
         color: black;
       }
+      #navbarSupportedContent ul li a {
+        transition: 0.5s;
+      }
+      #navbarSupportedContent ul li a:hover {
+        color: rgb(26, 138, 229);
+      }
     </style>
   </head>
   <body>
@@ -161,7 +167,11 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              style="background-color: rgb(69, 167, 238)"
+            >
               Search
             </button>
           </form>
