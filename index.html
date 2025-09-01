@@ -117,8 +117,9 @@
       }
       #navbarSupportedContent ul li a {
         transition: 0.5s;
+        color: black;
       }
-      #navbarSupportedContent ul li a:hover {
+      #navbarSupportedContent ul li a.blue-link {
         color: rgb(26, 138, 229);
       }
     </style>
@@ -141,21 +142,43 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active blue-link"
+                aria-current="page"
+                href="#first"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Dining</a>
+              <a class="nav-link active" aria-current="page" href="#menu"
+                >Menu</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Rooms</a>
+              <a class="nav-link active" aria-current="page" href="#room"
+                >Rooms</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#carouselExampleSlidesOnly"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#business"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#Features"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#last"
                 >Contact</a
               >
             </li>
@@ -190,7 +213,7 @@
     </div>
 
     <!-- 1 -->
-    <div class="paragragh-container text-center" data-aos="fade-up">
+    <div class="paragragh-container text-center" data-aos="fade-up" id="first">
       <h2>An Enriching Coastal Retreat – The Royal Haven</h2>
       <p>
         "The Royal Haven" is more than a name; it is a promise of a truly
@@ -213,7 +236,7 @@
       class="container-fluid text-center position-relative overflow-hidden p-0"
     >
       <img
-        src="/assets//images/blur.jpg"
+        src="/assets/images/dote 1.avif"
         alt="sky"
         class="img-fluid w-100 min-vh-50"
         style="filter: blur(5px)"
@@ -282,7 +305,7 @@
     </div>
 
     <!-- 3 -->
-    <p class="fs-3">Rooms Booking</p>
+    <p class="fs-3" id="room">Rooms Booking</p>
     <div class="container text-center">
       <div class="row">
         <div
@@ -468,7 +491,7 @@
     </div>
 
     <!-- 5 -->
-    <p class="fs-3">Business Travel</p>
+    <p class="fs-3" id="business">Business Travel</p>
     <div class="container text-center">
       <div
         class="row align-items-center justify-content-center g-4"
@@ -529,7 +552,7 @@
     </div>
 
     <!-- 6 -->
-    <section class="food-menu-section py-5">
+    <section class="food-menu-section py-5" id="menu">
       <div class="container">
         <div
           class="d-flex justify-content-between align-items-center mb-5"
@@ -670,7 +693,7 @@
     </section>
 
     <!-- 7 -->
-    <div class="container text-center">
+    <div class="container text-center" id="Features">
       <div class="row">
         <div class="col">
           <br />
@@ -848,7 +871,7 @@
     <br />
     <br />
     <!-- 8 -->
-    <div class="container-fluid bg-black text-white p-0">
+    <div class="container-fluid bg-black text-white p-0" id="last">
       <div class="text-center py-4">
         <p class="h4 mt-2 mb-0">The Royal Haven</p>
         <p class="fs-6" style="color: #ffffff">WELIGAMA - SRI LANKA</p>
@@ -1070,6 +1093,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const homeLink = document.querySelector('a[href="#first"]');
+
+        navLinks.forEach((link) => {
+          link.addEventListener("mouseover", () => {
+            navLinks.forEach((item) => item.classList.remove("blue-link"));
+            link.classList.add("blue-link");
+          });
+
+          link.addEventListener("mouseout", () => {
+            navLinks.forEach((item) => item.classList.remove("blue-link"));
+            homeLink.classList.add("blue-link");
+          });
+        });
+      });
     </script>
   </body>
 </html>
